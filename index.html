@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+    <form>
+        <input type="text" id="username"
+        placeholder="enter your username">
+        <label for="username"
+        oneclick="expand(this)">username</label>
+        <input type="email" id="email"
+        placeholder="enter your email">
+        <label for="email"
+        oneclick="expand(this)">email</label>
+        <input type="password" id="password"
+        placeholder="enter your password">
+        <label for="password"
+        oneclick="expand(this)">password</label>
+        <button>submit</button>
+    </form>
+    <a href="https://youtube.com/channel/UCNcVMmS5TndMcCqKcn7BUPA" target="_blank">learn to code</a>
+    </div>
+    <script>
+        function expand (label){
+            var elemid = label.getAttribute("for");
+            document.getElementById(elemid).style.height="45px"
+            document.getElementById(elemid).classList.add("my-style");
+            label.style.transform="translate(-45px)";
+        }
+    </script>
+</body>
+</html>

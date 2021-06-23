@@ -1,0 +1,137 @@
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing:0.5px;
+}
+body{
+    height: 100vh;
+    width: 100vh;
+    background: linear-gradient(
+        135deg,
+        #1b0120,
+        #6f1086
+    );
+    justify-content: center;
+}
+.container{
+    height: 480px;
+    width: 320px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+form{
+    height: 400px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+    backdrop-filter: biur(100px);
+    position: absolute;
+    top: 0;
+    border-radius: 8px;
+    padding: 0 30px;
+    -webkit-box-shadow:0 20px 25px
+    rgba(0,0,0,0.35)
+    box-shadow:0 20px 25px
+    rgba(0,0,0,0.35)
+}
+label{
+    position: absolute;
+    display: block;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transform: 0.5s;
+    cursor: pointer;
+    color: #e5e5e5;
+    font-size: 20px;
+}
+input{
+    display: block;
+    height: 20px;
+    width: 245px;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 0 15px;
+    font-weight: 300;
+    border-radius: 5px;
+    background-color: #4d4d4d;
+    color: #fff;
+    pointer-events: none;
+}
+label[for="username"]{
+    bottom: 320px;
+}
+#username{
+    bottom: 290px;
+}
+label[for="email"]{
+    bottom: 240px;
+}
+#email{
+    bottom: 210px;
+}
+label[for="password"]{
+    bottom: 160px;
+}
+#password{
+    bottom: 130px;
+}
+button{
+    width: 260px;
+    position: absolute;
+    bottom: 60px;
+    padding: 15px 0;
+    background-color: #1b0120;
+    color: #fff;
+    border-radius: 5px;
+}
+::-webkit-input-placeholder{
+    color: transparent;
+}
+:-moz-placeholder{
+    color: transparent;
+}
+:-ms-input-placeholder{
+    color: transparent;
+}
+::placeholder{
+    color: transparent;
+}
+.my-style::-webkit-input-placeholder{
+    color: #a5a5a5;
+}
+.my-style::-moz-placeholder{
+    color: #a5a5a5;
+}
+.my-style::-ms-input-placeholder{
+    color: #a5a5a5;
+}
+.my-style::placeholder{
+    color: #a5a5a5;
+}
+a{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #1b0120;
+    text-align: center;
+    font-size: 20px;
+    padding: 12px 30px;
+    border-radius: 5;
+    text-decoration: none;
+    -webkit-box-shadow:0 20px 25px rgba(0,0,0,0.35);
+    box-shadow:0 20px 25px rgba(0,0,0,0.35);
+}
